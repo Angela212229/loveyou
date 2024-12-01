@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartitas de Amor</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Para el amor de mi vida</h1>
+        <p>Cada carta tiene un mensaje especial para ti 💌</p>
+
+
+    </header>
+
+    <main>
+        <div class="envelopes-container">
+            
+            <div class="row">
+                <div class="envelope" onclick="showCard(1)"></div>
+                <div class="envelope" onclick="showCard(2)"></div>
+                <div class="envelope" onclick="showCard(3)"></div>
+            </div>
+            
+            <div class="row">
+                <div class="envelope" onclick="showCard(4)"></div>
+                <div class="envelope" onclick="showCard(5)"></div>
+                <div class="envelope" onclick="showCard(6)"></div>
+            </div>
+            
+            <div class="row">
+                <div class="envelope" onclick="showCard(7)"></div>
+                <div class="envelope" onclick="showCard(8)"></div>
+                <div class="envelope" onclick="showCard(9)"></div>
+            </div>
+        </div>
+        <div id="card-modal" class="modal hidden">
+            <div class="card-content">
+                <span class="close" onclick="closeCard()">×</span>
+                <p id="card-text"></p>
+            </div>
+        </div>
+    </main>
+
+
+ <a href="/amor">Siguiente</a> 
+    
+    
+</div>
+
+
+
+
+
+</body>
+<script src="/static/js/script.js"></script>
+</html>

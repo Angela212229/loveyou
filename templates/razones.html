@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Razones</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>100 Razones por las que te Amo</h1>
+        <p>Haz clic para descubrirlas ❤️</p>
+    </header>
+    <main>
+        <div id="reason-container">
+            <p id="reason-text">Haz clic en el botón para empezar...</p>
+        </div>
+        <button onclick="showReason()">Descubrir razón</button>
+    </main>
+    <a href="/linea">Siguiente</a>
+    <script>
+        const reasons = [
+            "Eres mi persona favorita.",
+            "Siempre sabes cómo hacerme sonreír.",
+            "Amo tus abrazos.",
+            "Eres tan bondadoso/a.",
+            "Tu risa ilumina mi día.",
+            // Agrega más razones aquí
+        ];
+
+        let index = 0;
+
+        function showReason() {
+            const reasonText = document.getElementById("reason-text");
+            if (index < reasons.length) {
+                reasonText.textContent = reasons[index];
+                index++;
+            } else {
+                reasonText.textContent = "Ya viste todas las razones. ¡Te amo mucho!";
+            }
+        }
+    </script>
+</body>
+</html>

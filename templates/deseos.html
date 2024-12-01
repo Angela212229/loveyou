@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Lista de Deseos</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffb6d2; 
+    color: #333;
+    text-align: center;
+}
+
+
+header {
+    background-color: #faade0; 
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+ul li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #fabbc3; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f1a7df;
+    color: white;
+    transform: scale(1.02);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #ff61ab; 
+}
+
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #ebb0ab;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #f7c2c7; 
+    transform: scale(1.05);
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Nuestra Lista de Deseos</h1>
+        <p>Porque soñar juntos es lo más bonito ❤️</p>
+    </header>
+    <main>
+        <ul id="wish-list">
+            <li><input type="checkbox" id="wish1"> Viajar a París</li>
+            <li><input type="checkbox" id="wish2"> Hacer un picnic romántico</li>
+            <li><input type="checkbox" id="wish3"> Ver juntos un amanecer en la playa</li>
+            <li><input type="checkbox" id="wish3"> Ser millonarios juntos</li>
+            <li><input type="checkbox" id="wish3"> Ver una pelicula romantica</li>
+            <li><input type="checkbox" id="wish3"> Ir de campamento a las grutas de tolantongo</li>
+            <li><input type="checkbox" id="wish3"> Tener un carro juntos</li>
+            <li><input type="checkbox" id="wish3"> Vivir juntos, y amanecer a tu lado</li>
+            <li><input type="checkbox" id="wish3"> Tener mascotitas juntos</li>
+            <li><input type="checkbox" id="wish3"> Hacer postrecitos juntos</li>
+            <li><input type="checkbox" id="wish3"> Hacer una pijamada juntitos</li>
+            <li><input type="checkbox" id="wish3"> Andar en bici juntos</li>
+            <li><input type="checkbox" id="wish3"> Estar siempre juntos</li>
+            <li><input type="checkbox" id="wish3"> Envejecer juntos</li>
+
+
+        </ul>
+    </main>
+    <a href="/poemas">Siguiente</a>
+</body>
+</html>

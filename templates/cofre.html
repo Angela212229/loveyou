@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Cofre del Tesoro</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+<style>
+
+.treasure-box {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #ff61a3;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f80439;
+}
+
+.hidden {
+    display: none;
+}
+
+#treasure {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Nuestro Cofre del Tesoro</h1>
+    </header>
+    <main>
+        <div class="treasure-box">
+            <button onclick="openTreasure()">Abrir Cofre</button>
+            <div id="treasure" class="hidden">
+                <img src="/static/img/amorrr.jpeg" alt="Cofre Abierto">
+                <p>Este es un recuerdo muy especial para mi de nosotros. ¡Te amo!</p>
+            </div>
+        </div>
+    </main>
+    <a href="/poderes">Siguiente</a>
+    <script src="/static/js/cofre.js"></script>
+</body>
+</html>

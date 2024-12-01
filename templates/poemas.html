@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas y Frases de Amor</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Poemas y Frases de Amor</h1>
+        <p>Haz clic para descubrir una frase romántica 💖</p>
+    </header>
+    <main>
+        <button onclick="showQuote()">Ver Frase</button>
+        <p id="quote"></p>
+    </main>
+    <a href="/diario">Siguiente</a>
+    <script>
+        const quotes = [
+            "Eres la razón por la que sonrío cada día.",
+            "En tus ojos encuentro mi hogar.",
+            "Te amo más allá de las estrellas."
+        ];
+        function showQuote() {
+            const random = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById('quote').textContent = random;
+        }
+    </script>
+</body>
+</html>

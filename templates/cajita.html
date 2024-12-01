@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajita de Sorpresas</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+<style>
+
+.box {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe4e1;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Cajita de Sorpresas</h1>
+    </header>
+    <main>
+        <button onclick="openBox()">Abrir Caja</button>
+        <div id="box" class="box hidden">
+            <img src="/static/img/amormio.jpeg" alt="Foto Sorpresa">
+            <p>Te amo muchísimo 💖</p>
+            <button onclick="showMore()">Abrir Más Sorprensas</button>
+        </div>
+    </main>
+    <a href="/detalles">Siguiente</a>
+
+    <script src="/static/js/box.js"></script>
+</body>
+</html>

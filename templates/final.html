@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Final de Nuestra Historia</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        
+        body {
+            background-color: #f5d0dc;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed;
+        }
+
+       
+        .final-container {
+            text-align: center;
+            padding: 5vw;
+            background-color: rgba(252, 158, 194, 0.322); 
+            color: #333;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            margin: 2vw;
+            backdrop-filter: blur(10px);
+            margin-top: 20vw;
+            min-width: 300px; 
+            min-height: 300px; 
+            box-sizing: border-box; 
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fd0665;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #ff61b8;
+            color: white;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3b7c;
+        }
+
+        
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/static/img/corazones.gif') no-repeat center center;
+            background-size: cover;  
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        
+        .gif-container {
+            position: absolute;
+            top: 1000%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+            opacity: 0.2;
+        }
+
+       
+        @media (max-width: 768px) {
+            .final-container {
+                padding: 8vw;
+                margin-top: 10vw;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="background-image"></div>
+
+    <div class="final-container">
+        <h1>Gracias por acompañarme en esta aventura</h1>
+        <p>Mi Amor</p>
+        <p>Este recorrido ha sido una hermosa forma de expresarte cuánto te amo. Cada paso, cada juego, cada recuerdo ha sido creado con todo mi corazón, con la esperanza de hacerte sonreír, de mostrarte cuánto significas para mí.</p>
+        <p>Aunque esta página se cierre, mi amor por ti no tiene fin. Te prometo que seguiré buscando maneras de sorprenderte y mostrarte mi cariño.</p>
+        <p>Siempre contigo, siempre por ti. ❤️</p>
+        <button onclick="window.location.href='/'">Volver al Inicio</button> 
+    </div>
+
+    
+    <div class="gif-container">
+        <img src="/static/img/amorrr.jpeg" alt="gif-romántico" style="max-width: 100%; height: auto;">
+    </div>
+</body>
+</html>

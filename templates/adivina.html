@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina Qué</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #ff6188;
+}
+
+.game {
+    margin-top: 50px;
+}
+
+button {
+    background-color: #ff6196;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fc86b3;
+}
+
+.hidden {
+    display: none;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Adivina Qué</h1>
+    </header>
+    <main>
+        <div class="game">
+            <p>¿Qué es lo que más me gusta de ti?</p>
+            <button onclick="showAnswer()">Mostrar respuesta</button>
+            <p id="answer" class="hidden">Tu sonrrisa, tus ojos, tu belleza, tu manera de ser, tus locuras, tu cuerpecito, tu cabello, TODO.</p>
+        </div>
+
+        <div class="game">
+            <p>¿Me gustas?</p>
+            <button onclick="showtu()">Mostrar respuesta</button>
+            <p id="tu" class="hidden">ME ENCANTAS!!!</p>
+        </div>
+
+        <div class="game">
+            <p>¡QUE CREES!</p>
+            <button onclick="showtus()">¿Qué?</button>
+            <p id="tus" class="hidden">TE AMOOOOOOOO</p>
+        </div>
+
+        <div class="game">
+            <p>ADIVINA QUE!</p>
+            <button onclick="showtur()">¡QUEEEE!</button>
+            <p id="tur" class="hidden">Ya casi es navidadddd!!!!</p>
+        </div>
+
+        <div class="game">
+            <p>Te dire un secreto.</p>
+            <button onclick="showtum()">¿Cual secreto?</button>
+            <p id="tum" class="hidden">ESTAAAAAAAA</p>
+        </div>
+
+    </main>
+    <a href="/cofre">Siguiente</a>
+    <script src="/static/js/game.js"></script>
+</body>
+</html>
